@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+    text-align: center;
+    background: url("./bg.jpg");
+    background-size: cover;    
+    padding: 0px;
+    cursor: url('h1.png') 7 0, move;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 600px;
+    justify-content: space-between;
+    font-weight: 900;   
+    font-size: 20px;
+}
+
+.click{
+    cursor: url('h2.png') 7 0, move;
+}
+
+/*css for grid*/
+#board {
+    width: 540px;
+    height: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /*pwede gawin image you background dito, gayahin niyo lang yung syntax sa body*/
+}
+
+/*css for nest*/
+#board div { 
+    image-rendering: pixelated; /*para d pixelated si picture*/
+    width: 180px;
+    height: 180px;
+    background: url("./icon-nest.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/*css for berdie*/
+#board div img {
+    image-rendering: pixelated; /*para d pixelated si picture*/
+    width: 100px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*animation for popup ni berd*/
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.appear {
+    animation: appear 0.3s forwards;
+}
+
+/*animation for alis ni berd*/
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.disappear {
+    animation: disappear 0.3s forwards;
+}
+
+/*animation pagclick kay berd*/
+@keyframes hit {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    20% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    70% {
+        opacity:0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity:0;
+        transform: scale(0);
+    }
+}
+
+.hit {
+    animation: hit 0.1s forwards;
+}

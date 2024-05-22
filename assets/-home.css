@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url('bg-animated.gif');
+    background-size: cover;
+    background-color: black;
+    color:black; 
+    margin: 20px;
+    image-rendering: pixelated; /*para d pixelated si picture*/
+    text-align: center;    
+}
+
+.container{
+    display: flex;  
+    flex-direction: column;
+    margin: auto;
+    width: 800px;
+    height: 250px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 150px 0px;
+    margin: auto;   
+    font-family: "Press Start 2P";
+}
+
+.title{
+    font-family: "Press Start 2P";
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 0;
+    cursor: url('h-auto.png'), auto; /*cursor pag nahover c titel kc trip lang*/
+}
+
+.subtitle{
+    font-family: "Press Start 2P";
+    color: darkslategray;    
+    cursor: url('h-auto.png'), auto;
+}
+
+.button, button{
+    font-family: "Press Start 2P";
+    display: inline-block;
+    width: 230px;   
+    margin-bottom: 10px;
+    padding: 10px 0px 7px;
+    font-size: 15px;
+    text-decoration: none;
+    color:aquamarine ;
+    background-color: darkslategray;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: url('h-auto.png'), auto;
+}
+
+.button:hover, button:hover{
+    background-color: darkolivegreen;
+    color: white;
+    transform: scale(1.05);
+}
+
+.modal-content, .modal-body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    line-height: 20px;
+}
