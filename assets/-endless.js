@@ -173,12 +173,12 @@ function countDown() {
         if (score < 0){
         alert("You REALLY Failed! Your Final score is: "  
         + finalScore + "\nWHACK THE FACK!");
-        window.location.href = 'homepage.html';
+        window.location.href = '../index.html';
        }
        else {
         alert("You Failed! Your Final score is: "  
         + finalScore + "\nReturn to menu.");
-        window.location.href = 'homepage.html';
+        window.location.href = '../index.html';
        }
     }
 
