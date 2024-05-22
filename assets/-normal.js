@@ -234,13 +234,13 @@ function countDown() {
                 }
             else {
             alert("Your Final score is: " + finalScore);
-                window.location.href = 'homepage.html';
+                window.location.href = '../index.html';
             }
         }
         else {
             alert("You Failed! Your Final score is: "  
             + finalScore + "\nReturn to menu.");
-            window.location.href = 'homepage.html';
+            window.location.href = '../index.html';
         }
     }
 }
