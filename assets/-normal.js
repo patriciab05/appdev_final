@@ -70,7 +70,7 @@ function setMole() {
     currentMoleTile.firstChild.addEventListener("animationend", function() {
         currentMoleTile.firstChild.remove(); //remove the img after animation
     });
-    }, 800);
+    }, 2700);
 }
 function setMole2() {
 
@@ -99,7 +99,7 @@ function setMole2() {
         currentMoleTile2.firstChild.addEventListener("animationend", function() {
             currentMoleTile2.firstChild.remove(); //remove the img after animation
         });
-    }, 800);
+    }, 3700);
 }
 
 function setOther() {
@@ -130,7 +130,7 @@ function setOther() {
     currentOtherTile.firstChild.addEventListener("animationend", function() {
         currentOtherTile.firstChild.remove();
     });
-    }, 900);
+    }, 2700);
 }
 function setOther2() {
 
@@ -160,7 +160,7 @@ function setOther2() {
     currentOtherTile2.firstChild.addEventListener("animationend", function() {
         currentOtherTile2.firstChild.remove();
     });
-    }, 800);
+    }, 3700);
 }
 
 
